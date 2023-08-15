@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
     use("nvim-treesitter/playground")
     use("theprimeagen/harpoon")
     use("nvim-tree/nvim-tree.lua")
-    use("nvim-tree/nvim-web-devicons")
+    use 'nvim-tree/nvim-web-devicons'
     use('neovim/nvim-lspconfig')
     use('jose-elias-alvarez/null-ls.nvim')
     use('MunifTanjim/prettier.nvim')
@@ -47,4 +47,17 @@ return require('packer').startup(function(use)
         }
     }
     use('MunifTanjim/eslint.nvim')
+    use {
+        'lalitmee/cobalt2.nvim',
+        requires = 'tjdevries/colorbuddy.nvim'
+    }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use {'kevinhwang91/nvim-bqf', ft = 'qf'}
+    use {'junegunn/fzf', run = function()
+        vim.fn['fzf#install']()
+    end
+}
 end)
