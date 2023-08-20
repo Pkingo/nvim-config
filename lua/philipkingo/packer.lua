@@ -56,6 +56,7 @@ return require('packer').startup(function(use)
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
     use {'kevinhwang91/nvim-bqf', ft = 'qf'}
+    use 'ThePrimeagen/vim-be-good'
     use {'junegunn/fzf', run = function()
         vim.fn['fzf#install']()
     end
