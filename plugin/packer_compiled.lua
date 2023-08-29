@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/phillipkingo/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/Users/phillipkingo/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["eslint.nvim"] = {
     loaded = true,
     path = "/Users/phillipkingo/.local/share/nvim/site/pack/packer/start/eslint.nvim",
@@ -235,11 +240,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/phillipkingo/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-be-good"] = {
-    loaded = true,
-    path = "/Users/phillipkingo/.local/share/nvim/site/pack/packer/start/vim-be-good",
-    url = "https://github.com/ThePrimeagen/vim-be-good"
   },
   ["vim-fugitive"] = {
     loaded = true,

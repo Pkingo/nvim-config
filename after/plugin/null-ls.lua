@@ -7,6 +7,7 @@ local async = event == "BufWritePost"
 null_ls.setup({
     sources = {
         require('null-ls').builtins.formatting.prettier,
+        require('null-ls').builtins.formatting.eslint,
         require('null-ls').builtins.diagnostics.eslint,
     },
     on_attach = function(client, bufnr)
